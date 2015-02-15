@@ -1,0 +1,12 @@
+$TTL 600
+@     IN     SOA    taskcluster-dns-server-1.jonasfj.cont.tutum.io. noreply.worker-taskcluster.net. (
+                    1         ; serial
+                    300       ; refresh after 5 min
+                    600       ; retry after 10 min
+                    600       ; expire after 10 min
+                    120 )     ; minimum TTL of 2 min
+@     IN     NS     taskcluster-dns-server-1.jonasfj.cont.tutum.io.
+@     IN     NS     taskcluster-dns-server-2.jonasfj.cont.tutum.io.
+
+ec2.worker-taskcluster.net.   IN DNAME    compute.amazonaws.com.
+
