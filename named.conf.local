@@ -6,8 +6,8 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "worker-taskcluster.net" IN {
+zone "taskcluster-worker.net" IN {
     type master;
-    file "/var/named/data/worker-taskcluster.net";
+    file "/var/named/data/taskcluster-worker.net";
 };
 

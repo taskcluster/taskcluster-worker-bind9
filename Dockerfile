@@ -11,7 +11,7 @@ RUN           DEBIAN_FRONTEND=noninteractive apt-get -y update && \
 
 # Add configuration file
 ADD           named.conf.local        /etc/bind/named.conf.local
-ADD           worker-taskcluster.net  /var/named/data/worker-taskcluster.net
+ADD           taskcluster-worker.net  /var/named/data/taskcluster-worker.net
 
 # Expose port 53 as UDP
 EXPOSE        53/udp
